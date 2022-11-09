@@ -12,7 +12,7 @@ import firebase from './imgs/firebase.png'
 
 const Skills = () => {
     return (
-        <div className=' mx-auto   my-40 text-slate-100 overflow-hidden w-[100%] bg-gradient-to-t from-[#091b33] to-[#021529]    flex  items-center flex-col'>
+        <div className=' mx-auto   my-40 text-slate-100 overflow-hidden py-10 w-[100%] bg-gradient-to-t from-[#091b33] to-[#021529]    flex  items-center flex-col'>
             <div className='text-3xl mx-auto font-semibold text-slate-100 self-start my-8 '>Skills</div>
             <div className='text-center '>
 
