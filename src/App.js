@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import Header from './components/Header';
+import Footer from './components/Footer';
 function App() {
 
 
@@ -9,13 +10,13 @@ function App() {
   return (
     <div>
 
-      <Header />
+      {/* <Header /> */}
       <div className=' w-[95%] bg-slate-700 mx-auto h-[1px]'/>
      
         <Home />
      
 
-
+        <Footer />
     </div >
   );
 }
