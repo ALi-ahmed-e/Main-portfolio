@@ -24,7 +24,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="p-4 bg-white sm:p-6 dark:bg-slate-900">
+        <footer className="p-4 ">
 
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">

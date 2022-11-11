@@ -12,12 +12,12 @@ import firebase from './imgs/firebase.png'
 
 const Skills = () => {
     return (
-        <div className=' mx-auto   my-40 text-slate-100 overflow-hidden py-10 w-[100%] bg-gradient-to-t from-[#091b33] to-[#021529]    flex  items-center flex-col'>
-            <div className='text-3xl mx-auto font-semibold text-slate-100 self-start my-8 '>Skills</div>
+        <div className=' mx-auto   my-20 dark:text-slate-100 overflow-hidden py-10 w-[100%]   flex  items-center flex-col'>
+            <div className='text-3xl mx-auto font-semibold dark:text-slate-100 self-start my-8 '>Skills</div>
             <div className='text-center '>
 
 
-            <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
                     Html
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={Html} className='w-10' alt="" />
@@ -28,8 +28,9 @@ const Skills = () => {
 
                 </div>
 
-                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
-                   Css
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Css
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={Css} className='w-10' alt="" />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
@@ -39,8 +40,9 @@ const Skills = () => {
 
                 </div>
 
-                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
-                   Javascript
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Javascript
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={js} className='w-11' alt="" />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
@@ -50,8 +52,9 @@ const Skills = () => {
 
                 </div>
 
-                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
-                   Jquery
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Jquery
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={jquery} className='w-9 mx-0.5' alt="" />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
@@ -61,8 +64,9 @@ const Skills = () => {
 
                 </div>
 
-                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
-                   React.js
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    React.js
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={react} className='w-8 mx-0.5' alt="" />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
@@ -72,8 +76,9 @@ const Skills = () => {
 
                 </div>
 
-                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
-                   Tailwind
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Tailwind
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={tailwind} className='w-10 mx-0.5' alt="" />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
@@ -84,8 +89,9 @@ const Skills = () => {
                 </div>
 
 
-                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
-                   Redux
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Redux
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={redux} className='w-9 mx-0.5' alt="" />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
@@ -96,8 +102,9 @@ const Skills = () => {
                 </div>
 
 
-                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-900 shadow-xl'>
-                   Firebase
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Firebase
                     <div className='w-full h-[50px] flex items-center justify-center'>
                         <img src={firebase} className='w-7 mx-0.5' alt="" />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
@@ -110,7 +117,7 @@ const Skills = () => {
 
 
 
-             
+
 
             </div>
 
