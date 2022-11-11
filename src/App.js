@@ -57,6 +57,21 @@ function App() {
         }
         break;
 
+      default:
+        localStorage.setItem('theme', 'system')
+        system.current.style.display = ''
+        dark.current.style.display = 'none'
+        light.current.style.display = 'none'
+
+        if (window.matchMedia('(prefers-color-scheme:dark)').matches) {
+          document.body.style.background = 'linear-gradient(360deg,#070b16,#0f172a)'
+          setAppTheme('dark')
+
+        } else {
+          document.body.style.backgroundColor = "linear-gradient(360deg,#f4f7fc,#ffffff)"
+          setAppTheme('')
+        }
+        break;
 
     }
   }
