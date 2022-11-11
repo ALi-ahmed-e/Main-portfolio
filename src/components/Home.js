@@ -1,6 +1,5 @@
 import React from 'react'
-import Footer from './Footer'
-import imag from './Me-removebg.png'
+import imag from './imgs/Me-removebg.png'
 import Projects from './Projects'
 import Skills from './Skills'
 import {ArrowRightIcon} from '@heroicons/react/20/solid'
