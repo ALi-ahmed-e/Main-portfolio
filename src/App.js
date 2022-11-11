@@ -59,6 +59,7 @@ function App() {
 
       default:
         localStorage.setItem('theme', 'system')
+        setsw('system')
         system.current.style.display = ''
         dark.current.style.display = 'none'
         light.current.style.display = 'none'
