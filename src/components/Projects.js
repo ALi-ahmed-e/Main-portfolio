@@ -40,7 +40,7 @@ const Projects = () => {
                     <img src={moviesapp} className='w-full h-full rounded-xl relative' alt="" />
                     <div className=' rounded-xl w-full h-full bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
                         <a href='https://github.com/ALi-ahmed-e/Movies-app' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a href='thunderous-semolina-97fff5.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
+                        <a href='https://thunderous-semolina-97fff5.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
                     </div>
                     <p className=' -mt-[138px] mx-16 absolute'>Movies app</p>
                 </div>
@@ -70,7 +70,7 @@ const Projects = () => {
                     <img src={chatapp} className='w-full h-full rounded-xl relative' alt="" />
                     <div className=' rounded-xl w-full h-full bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
                         <a href='https://github.com/ALi-ahmed-e/chat-app' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a href='scintillating-torte-9a3579.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
+                        <a href='https://scintillating-torte-9a3579.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
                     </div>
                     <p className=' -mt-[138px] ml-20 absolute'>Chat app</p>
                 </div>
@@ -79,7 +79,7 @@ const Projects = () => {
                     <img src={socialmediaaapp} className='w-full h-full rounded-xl relative' alt="" />
                     <div className=' rounded-xl w-full h-full bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
                         <a href='https://github.com/ALi-ahmed-e/social-media-website' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a href='superlative-cobbler-14d8a5.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
+                        <a href='https://superlative-cobbler-14d8a5.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
                     </div>
                     <p className=' -mt-[138px] ml-10 absolute'>social media website</p>
                 </div>
@@ -88,7 +88,7 @@ const Projects = () => {
                     <img src={ecommerce} className='w-full h-full rounded-xl relative' alt="" />
                     <div className=' rounded-xl w-full h-full bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
                         <a href='https://github.com/ALi-ahmed-e/e-commerce-witout-database' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a href='sparkling-pothos-ae393e.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
+                        <a href='https://sparkling-pothos-ae393e.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
                     </div>
                     <p className=' -mt-[138px] ml-6 absolute'>E-commerce app (vanilla js)</p>
                 </div>
@@ -97,7 +97,7 @@ const Projects = () => {
                     <img src={weatherapp} className='w-full h-full rounded-xl relative' alt="" />
                     <div className=' rounded-xl w-full h-full bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
                         <a href='https://github.com/ALi-ahmed-e/Weather-app' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a href='meek-squirrel-cf2189.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
+                        <a href='https://meek-squirrel-cf2189.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
                     </div>
                     <p className=' -mt-[138px] ml-10 absolute'>weather app (vanilla js)</p>
                 </div> 
