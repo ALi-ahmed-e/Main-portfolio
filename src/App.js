@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import {useLayoutEffect, useRef, useState } from 'react';
 import { MoonIcon, SunIcon, TvIcon } from '@heroicons/react/24/outline';
 function App() {
 
