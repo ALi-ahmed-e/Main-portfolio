@@ -8,6 +8,7 @@ import chatapp from './imgs/chatapp.png'
 import socialmediaaapp from './imgs/socialmedia.png'
 import ecommerce from './imgs/ecommerce.png'
 import weatherapp from './imgs/weatherapp.png'
+import ONFLEEK from './imgs/ONFLEEK.png'
 
 
 
@@ -24,7 +25,13 @@ const Projects = () => {
         <div className=' w-full py-5 my-10  dark:text-white'>
             <h1 className='font-semibold dark:text-slate-100 text-3xl text-center my-10'>Projects</h1>
             <div className=' w-full h-full text-center'>
-
+            <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
+                    <img src={ONFLEEK} className='w-full h-full rounded-xl relative' alt="" />
+                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
+                       <a target="true" href='https://on-fleek.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
+                    </div>
+                    <p className=' -mt-[138px] ml-10 absolute'>fullstack E-commerce app</p>
+                </div> 
 
                 <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
                     <img src={photosite} className='w-full h-full rounded-xl relative' alt="" />
@@ -101,6 +108,7 @@ const Projects = () => {
                     </div>
                     <p className=' -mt-[138px] ml-10 absolute'>weather app (vanilla js)</p>
                 </div> 
+               
 
 
             </div>
