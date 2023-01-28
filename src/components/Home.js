@@ -35,7 +35,8 @@ const Home = () => {
             <div className=' w-[95%] bg-slate-700 mx-auto h-[1px]' />
             <Projects />
 
-           
+
+
 
         </div>
     )
