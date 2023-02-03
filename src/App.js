@@ -106,7 +106,7 @@ function App() {
 
 
 
-  return (
+  return (<>
     <div className={AppTheme}>
       <div className='w-fit mx-auto flex items-center justify-around' onClick={switchtheme}>
         <div ref={light} className=' flex items-center justify-center w-10 h-7 rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-700 dark:hover:bg-sky-900 dark:text-white hover:bg-sky-200 transition-all'> < SunIcon className='w-6' /></div>
@@ -120,6 +120,7 @@ function App() {
 
       <Footer />
     </div >
+    </>
   );
 }
 
