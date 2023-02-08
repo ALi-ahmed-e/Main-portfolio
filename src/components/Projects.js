@@ -28,27 +28,6 @@ const Projects = () => {
 
 
 
-    // const [sites, setSites] = useState([]);
-
-    // useEffect(() => {
-    //   const getSites = async () => {
-    //     const response = await fetch('https://api.netlify.com/api/v1/sites', {
-    //       headers: {
-    //         'Authorization': `Bearer KcwJwr1_qWzd9CmLzZdowryejJ_dyV3X2Wwo_5lEuSs`
-    //       }
-    //     });
-    //     const data = await response.json();
-    //     setSites(data);
-    //     console.log(data)
-    //   };
-
-    //   getSites();
-    // }, []);
-
-
-
-
-
 
 
     return (
