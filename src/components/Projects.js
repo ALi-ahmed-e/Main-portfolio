@@ -18,7 +18,6 @@ import js from './imgs/js.png'
 
 
 
-// KcwJwr1_qWzd9CmLzZdowryejJ_dyV3X2Wwo_5lEuSs
 
 
 

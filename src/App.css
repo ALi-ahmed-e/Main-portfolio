@@ -1,5 +1,5 @@
 .blob {
-  width: 100%;
+  width: 95%;
   height: 280px;
   max-width: 300px;
   border-radius: 70% 90% 70% 90%;
@@ -13,24 +13,22 @@
   width: 200px;
 }
 
-.typewriter h1 {
+ /* .typewriter h1 {
   border-right: .15em solid ;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
-    typing 3s steps(30, end)
-}
+
+} */
+
 
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
+    border-right:0.15em solid;
   }
 
   to {
-    width: 100%
+    width: 100%;
+    border-right: none !important;
   }
 }
 

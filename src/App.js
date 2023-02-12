@@ -113,7 +113,7 @@ function App() {
         <div ref={dark} className=' flex items-center justify-center w-10 h-7 rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-700 dark:hover:bg-sky-900 dark:text-white hover:bg-sky-200 transition-all'> < MoonIcon className='w-6' /></div>
         <div ref={system} className=' flex items-center justify-center w-10 h-7 rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-700 dark:hover:bg-sky-900 dark:text-white hover:bg-sky-200 transition-all'> <TvIcon className='w-6' /></div>
       </div>
-      <div className=' w-[95%] bg-slate-700 mx-auto h-[1px]' />
+      <div className=' w-[95%] bg-slate-700 mx-auto h-[1px] overflow-x-hidden' />
 
       <Home />
 
