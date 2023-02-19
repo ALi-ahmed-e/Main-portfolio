@@ -1,22 +1,17 @@
-
 .btn:hover .icon {
   width: calc(100% - 0.6em);
- }
- 
+}
+
 @keyframes typing {
   from {
     width: 0;
-    border-right: 0.15em solid;
 
   }
 
   to {
     width: 100%;
-    border-right: none !important;
   }
 }
-
-
 
 
 

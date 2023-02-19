@@ -1,13 +1,6 @@
 import React from 'react'
-import Html from './imgs/html.png'
-import Css from './imgs/css.png'
-import js from './imgs/js.png'
-import jquery from './imgs/jquery.png'
-import react from './imgs/react.png'
-import tailwind from './imgs/tailwind.png'
-import redux from './imgs/redux.png'
-import firebase from './imgs/firebase.png'
-import { SiJavascript, SiReact, SiJquery, SiRedux, SiTailwindcss, SiHtml5, SiCss3, SiFirebase, SiBootstrap } from 'react-icons/si'
+import { SiJavascript, SiReact, SiJquery, SiRedux, SiTailwindcss, SiHtml5, SiCss3, SiFirebase, SiBootstrap, SiGithub, SiAdobephotoshop } from 'react-icons/si'
+import {RxKeyboard} from 'react-icons/rx'
 
 
 const Skills = () => {
@@ -120,9 +113,39 @@ const Skills = () => {
 
                 </div>
 
+                <div className=' w-[50%] h-[.5px] bg-slate-500/60 mx-auto my-6' />
 
-                
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Github
+                    <div className='w-full h-[50px] flex items-center justify-center'>
+                        <SiGithub size='37' className=' text-black  mx-1' />
+                        <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
+                            <div className='h-3 w-[90%] bg-gradient-to-r from-indigo-700 to-blue-900 rounded-lg'></div>
+                        </div>
+                    </div>
 
+                </div>
+
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    photoshop
+                    <div className='w-full h-[50px] flex items-center justify-center'>
+                        <SiAdobephotoshop size='37' className=' text-slate-800 h-[36px] bg-blue-500 rounded-md  mx-1' />
+                        <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
+                            <div className='h-3 w-[80%] bg-gradient-to-r from-indigo-400 to-blue-500 rounded-lg'></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div className=' cursor-pointer w-56 sm:w-64 py-3  ring-2 ring-sky-800  hover:ring-1 hover:ring-sky-700 hover:scale-110 hover:shadow-2xl transition-all inline-block m-5 h-28 rounded-2xl bg-slate-50 dark:bg-slate-900 shadow-xl'>
+                    Typing speed
+                    <div className='w-full h-[50px] flex items-center justify-center'>
+                        <RxKeyboard size='37' className='  h-[36px] rounded-md  mx-1' />
+                        <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
+                            <div className='h-3 w-[90%] bg-gradient-to-r from-emerald-700 to-lime-500 rounded-lg'></div>
+                        </div>
+                    </div>
+
+                </div>
 
 
 
