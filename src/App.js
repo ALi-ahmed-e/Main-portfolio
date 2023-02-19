@@ -1,8 +1,11 @@
 import './App.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import {useLayoutEffect, useRef, useState } from 'react';
-import { MoonIcon, SunIcon, TvIcon } from '@heroicons/react/24/outline';
+import { useLayoutEffect, useRef, useState } from 'react';
+import { HiDesktopComputer, HiMoon, HiSun } from "react-icons/hi";
+
+
+
 function App() {
 
   const [AppTheme, setAppTheme] = useState('');
@@ -24,7 +27,7 @@ function App() {
         document.body.style.background = "linear-gradient(360deg,#f4f7fc,#ffffff)"
         setAppTheme('')
 
-        
+
 
 
         break;
@@ -35,12 +38,12 @@ function App() {
         setAppTheme('dark')
         document.body.style.background = 'linear-gradient(360deg,#070b16,#0f172a)'
 
-        
+
 
 
         break;
       case 'system':
-        
+
         system.current.style.display = ''
         dark.current.style.display = 'none'
         light.current.style.display = 'none'
@@ -107,12 +110,17 @@ function App() {
 
 
   return (<>
-    <div className={AppTheme}>
-      <div className='w-fit mx-auto flex items-center justify-around' onClick={switchtheme}>
-        <div ref={light} className=' flex items-center justify-center w-10 h-7 rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-700 dark:hover:bg-sky-900 dark:text-white hover:bg-sky-200 transition-all'> < SunIcon className='w-6' /></div>
-        <div ref={dark} className=' flex items-center justify-center w-10 h-7 rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-700 dark:hover:bg-sky-900 dark:text-white hover:bg-sky-200 transition-all'> < MoonIcon className='w-6' /></div>
-        <div ref={system} className=' flex items-center justify-center w-10 h-7 rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-700 dark:hover:bg-sky-900 dark:text-white hover:bg-sky-200 transition-all'> <TvIcon className='w-6' /></div>
+    <div className={AppTheme + ' overflow-x-hidden'}>
+      <div className='w-fit mx-auto  flex items-center justify-around' onClick={switchtheme}>
+        <div ref={light} className=' flex items-center justify-center w-10 h-7 dark:text-white rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-600 dark:hover:bg-sky-900  hover:bg-sky-200 transition-all'>
+          < HiSun size={28} /></div>
+        <div ref={dark} className=' flex items-center justify-center w-10 h-7 dark:text-white rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-600 dark:hover:bg-sky-90 hover:bg-sky-200 transition-all'>
+          < HiMoon size={28} /></div>
+        <div ref={system} className=' flex items-center justify-center w-10 h-7 dark:text-white rounded-[4px] my-4 bg-slate-100 cursor-pointer dark:bg-slate-600 dark:hover:bg-sky-900  hover:bg-sky-200 transition-all'>
+          <HiDesktopComputer size={28} /></div>
       </div>
+
+
       <div className=' w-[95%] bg-slate-700 mx-auto h-[1px] overflow-x-hidden' />
 
       <Home />
@@ -120,7 +128,7 @@ function App() {
 
       <Footer />
     </div >
-    </>
+  </>
   );
 }
 

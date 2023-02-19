@@ -1,4 +1,3 @@
-import { CodeBracketIcon, SignalIcon } from '@heroicons/react/20/solid'
 import React, { useEffect, useState } from 'react'
 import photosite from './imgs/PhotoSite.png'
 import moviesapp from './imgs/moviesapp.png'
@@ -12,8 +11,8 @@ import ONFLEEK from './imgs/ONFLEEK.png'
 import Chat_app from './imgs/Chat_App.png'
 import react from './imgs/react.png'
 import js from './imgs/js.png'
-
-
+import { HiCode } from 'react-icons/hi'
+import { BsArrowRightShort } from 'react-icons/bs'
 
 
 
@@ -23,6 +22,67 @@ import js from './imgs/js.png'
 
 
 const Projects = () => {
+    const projects = [
+        {
+            image: ONFLEEK,
+            describtion: 'Fullstack E-commerce web application made using React.js & firebase & css & tailwindcss',
+            demoLink: 'https://on-fleek.netlify.app/',
+            githubLink: false,
+        },
+        {
+            image: Chat_app,
+            describtion: 'Fullstack realtime chat application made using React.js & firebase & css & tailwindcss',
+            demoLink:'https://melodic-croquembouche-aca439.netlify.app/' ,
+            githubLink:'https://github.com/ALi-ahmed-e/Chat_app' ,
+        },
+        {
+            image: photosite,
+            describtion: 'Fullstack social media web application made using React.js & firebase & css & tailwindcss',
+            demoLink: 'https://golden-crepe-2046fa.netlify.app',
+            githubLink: 'https://github.com/ALi-ahmed-e/Photo-site',
+        },
+        {
+            image: moviesapp,
+            describtion: 'Fullstack movies web application made using React.js & firebase & css & tailwindcss',
+            demoLink: 'https://thunderous-semolina-97fff5.netlify.app/',
+            githubLink: 'https://github.com/ALi-ahmed-e/Movies-app',
+        },{
+            image: cruds,
+            describtion: 'Fullstack crud web application made using React.js & firebase & css & tailwindcss',
+            demoLink: 'https://wonderful-dieffenbachia-4230cf.netlify.app/',
+            githubLink: 'https://github.com/ALi-ahmed-e/Crud-s',
+        },{
+            image: gitrepos,
+            describtion: ' github repos website made using React.js & firebase & css & tailwindcss',
+            demoLink: 'https://rainbow-sherbet-ebe763.netlify.app/',
+            githubLink: 'https://github.com/ALi-ahmed-e/Git-hub-users',
+        },{
+            image: chatapp,
+            describtion: ' Fullstack realtime chat web application made using React.js & firebase & css & tailwindcss',
+            demoLink: 'https://scintillating-torte-9a3579.netlify.app',
+            githubLink: 'https://github.com/ALi-ahmed-e/chat-app',
+        },{
+            image: socialmediaaapp,
+            describtion: ' Fullstack social media web application made using React.js & firebase & css & bootstrap',
+            demoLink: 'https://superlative-cobbler-14d8a5.netlify.app',
+            githubLink: 'https://github.com/ALi-ahmed-e/social-media-website',
+        },{
+            image: ecommerce,
+            describtion: ' e-commerce website  made using vanilla javascript  & css & bootstrap',
+            demoLink: 'https://sparkling-pothos-ae393e.netlify.app',
+            githubLink: 'https://github.com/ALi-ahmed-e/e-commerce-witout-database',
+        },{
+            image: weatherapp,
+            describtion: ' Weather website  made using vanilla javascript  & css ',
+            demoLink: 'https://meek-squirrel-cf2189.netlify.app/',
+            githubLink: 'https://github.com/ALi-ahmed-e/Weather-app',
+        },
+
+
+    ]
+
+
+
 
 
 
@@ -35,109 +95,56 @@ const Projects = () => {
             <div className=' w-full h-full text-center'>
 
 
-                <div className='  w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={ONFLEEK} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://on-fleek.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
+                {projects.map(project => <div key={Math.random()} className=' inline-block m-10 px-2 py-2 bg-white  dark:bg-slate-800 max-w-[250px] dark:shadow-none shadow-[0_0_25px_#726969] rounded-xl  '>
+            
+                    <div className='flex flex-col w-full h-full'>
+                        <img src={project.image} className='w-full h-full rounded-lg relative ring-1 self-center' alt="" />
+                        <div className=' w-[90%] h-[.5px] bg-slate-500 mt-2 mx-auto' />
+
+                        <p className=' opacity-90 text-sm my-2'>{project.describtion}</p>
+                        <div className=' flex flex-row  justify-around'>
+
+
+                            <a target="true" href={project.demoLink} className="btn w-[75%]  text-[white] text-[17px] font-medium tracking-wider flex items-center justify-center shadow-[inset_0_0_1.6em_-0.6em_#714da6] overflow-hidden relative h-[2.2em] pl-[1.2em] pr-[3.3em] p-[0.35em] rounded-[0.9em] border-[none] bg-[#a370f0]">
+                                Demo
+                                <div className="icon  absolute flex items-center justify-center h-[1.9em] w-[2.2em] shadow-[0.1em_0.1em_0.6em_0.2em_#7b52b9] transition-all duration-[0.3s] ml-[1em] rounded-[0.7em] right-[0.3em] bg-white">
+                                    <BsArrowRightShort className='w-[1.1em] transition-transform duration-[0.3s] text-[#7b52b9]' size={'30'} />
+                                </div>
+                            </a>
+
+
+
+                            {project.githubLink ? <a target="true" href={project.githubLink} className=' bg-[#7b52b9] text-white  flex items-center justify-center hover:bg-[#663e9e] transition-colors rounded-[0.9em]  w-[18%] h-[2.3em]'><HiCode size='20' /></a>
+                                : <span className=' bg-[#7b52b9] text-white  flex items-center justify-center opacity-80 cursor-not-allowed transition-colors rounded-[0.9em]  w-[18%] h-[2.3em]'><HiCode size='20' /></span>
+                            }
+
+
+                        </div>
                     </div>
-                    <p className=' -mt-[138px] ml-6 absolute'>fullstack E-commerce app</p>
-                </div>
-                <div className='  w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={Chat_app} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/Chat_app' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://melodic-croquembouche-aca439.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-6 absolute'>fullstack Chat app</p>
-                </div>
-
-                <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={photosite} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/Photo-site' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://golden-crepe-2046fa.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-4 absolute'>fullstack social media website</p>
-                </div>
+                </div>)}
 
 
-                <div className='  w-60 h-36 m-10 rounded-2xl  ring-1 inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={moviesapp} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/Movies-app' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://thunderous-semolina-97fff5.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] mx-12 absolute'>fullstack Movies app</p>
-                </div>
+
+                
+                
+
+               
 
 
-                <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={gitrepos} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/Git-hub-users' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://rainbow-sherbet-ebe763.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-20 absolute'>Github users </p>
-                </div>
+               
 
 
-                <div className='  w-60 h-36 m-10 rounded-2xl    ring-1 inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={cruds} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/Crud-s' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://wonderful-dieffenbachia-4230cf.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-10 absolute'>fullstack Todo List app</p>
-                </div>
+             
 
 
-                <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={chatapp} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/chat-app' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://scintillating-torte-9a3579.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-16 absolute'>fullstack Chat app</p>
-                </div>
+           
 
-                <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={react} className='w-full' alt="" /></div>
-                    <img src={socialmediaaapp} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/social-media-website' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://superlative-cobbler-14d8a5.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-4 absolute'>fullstack social media website</p>
-                </div>
+                
 
-                <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={js} className='w-full' alt="" /></div>
-                    <img src={ecommerce} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/e-commerce-witout-database' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://sparkling-pothos-ae393e.netlify.app' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-14 absolute'>E-commerce app </p>
-                </div>
+             
 
-                <div className=' w-60 h-36 m-10 rounded-2xl   ring-1  inline-block  overflow-hidden cursor-pointer'>
-                    <div className=' w-9 h-9  absolute z-40 m-3  rounded-lg  backdrop:blur-md p-1'><img src={js} className='w-full' alt="" /></div>
+                
 
-                    <img src={weatherapp} className='w-full h-full rounded-xl relative' alt="" />
-                    <div className=' rounded-xl w-full h-full text-white  bg-black/30  flex justify-around items-center backdrop-blur-md translate-y-[-100%] opacity-0 transition-all duration-300 hover:opacity-100'>
-                        <a target="true" href='https://github.com/ALi-ahmed-e/Weather-app' className='flex flex-col items-center hover:text-indigo-600 transition-all'><CodeBracketIcon className=' w-5' />Code</a>
-                        <a target="true" href='https://meek-squirrel-cf2189.netlify.app/' className='flex flex-col items-center hover:text-red-700 transition-all'><SignalIcon className=' w-5' />Demo</a>
-                    </div>
-                    <p className=' -mt-[138px] ml-16 absolute'>weather app</p>
-                </div>
 
 
 

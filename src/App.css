@@ -1,29 +1,13 @@
-.blob {
-  width: 95%;
-  height: 280px;
-  max-width: 300px;
-  border-radius: 70% 90% 70% 90%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.blob img {
-  width: 200px;
-}
-
- /* .typewriter h1 {
-  border-right: .15em solid ;
-
-} */
-
-
-
+.btn:hover .icon {
+  width: calc(100% - 0.6em);
+ }
+ 
 @keyframes typing {
   from {
     width: 0;
-    border-right:0.15em solid;
+    border-right: 0.15em solid;
+
   }
 
   to {
