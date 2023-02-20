@@ -16,7 +16,7 @@ const Skills = () => {
                         {/* <img src={Html} className='w-10' alt="" /> */}
                         <SiHtml5 size='37' className=' text-orange-500 ' />
                         <div className=' w-[80%] h-3 rounded-lg bg-slate-700'>
-                            <div className='h-3 w-[96%] bg-gradient-to-r from-indigo-500 to-blue-600 rounded-lg'></div>
+                            <div className='h-3 w-[96%] bg-gradient-to-r  from-indigo-500 to-blue-600 rounded-lg'></div>
                         </div>
                     </div>
 

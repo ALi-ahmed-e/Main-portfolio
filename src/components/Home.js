@@ -28,7 +28,7 @@ const Home = () => {
                             </div>
                         </div>
                         <p className=' dark:text-slate-400 text-slate-700 my-5 px-2'>
-                            I can design and build your website or web application using a lot of web technologies like react.Js and firebase and tailwind and more
+                            I can design and build your website or web application using a lot of web technologies like react.Js  firebase  tailwind and more
                         </p>
 
                     </div>
@@ -39,7 +39,7 @@ const Home = () => {
 
                     <div className=' w-11 h-11 bg-gradient-to-br from-[#0099b8]/20 to-[#5f0979]/20 rounded-lg absolute backdrop-blur-md  self-end flex items-center justify-center  ml-52  animate-bounce '>
 
-                        <FaReact size='30' className=' animate-pulse text-sky-500 rounded-md' />
+                        <FaReact size='30' className='  animate-pulse text-sky-500 rounded-md' />
                     </div>
 
 
