@@ -6,7 +6,7 @@ import {RxKeyboard} from 'react-icons/rx'
 const Skills = () => {
     return (
         <div className=' mx-auto   my-20 dark:text-slate-100 overflow-hidden py-10 w-[100%]   flex  items-center flex-col'>
-            <div className='text-3xl mx-auto font-semibold dark:text-slate-100 self-start my-8 '>Skills</div>
+            <div className='text-3xl mx-auto tracking-tight font-extrabold dark:text-slate-100 self-start my-8 '>Skills</div>
             <div className='text-center '>
 
 

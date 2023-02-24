@@ -89,7 +89,7 @@ const Projects = () => {
 
     return (
         <div className=' w-full py-5 my-10  dark:text-white'>
-            <h1 className='font-semibold dark:text-slate-100 text-3xl text-center my-10'>Projects</h1>
+            <h1 className=' dark:text-slate-100 text-3xl text-center my-10 tracking-tight font-extrabold'>Projects</h1>
             <div className=' w-full h-full text-center'>
 
 
