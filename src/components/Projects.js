@@ -93,7 +93,7 @@ const Projects = () => {
             <div className=' w-full h-full text-center'>
 
 
-                {projects.map(project => <div key={Math.random()} className=' inline-block m-10 px-2 py-2 bg-white  dark:bg-slate-800 max-w-[250px] dark:shadow-none shadow-[0_0_25px_#726969] rounded-xl  '>
+                {projects.map(project => <div key={Math.random()} className=' inline-block m-2 sm:m-10 px-2 py-2 bg-white  dark:bg-slate-800 w-[95%] max-w-[280px] dark:shadow-none shadow-[0_0_25px_#726969] rounded-xl  '>
             
                     <div className='flex flex-col w-full h-full'>
                         <img src={project.image} className='w-full h-full rounded-lg relative ring-1 self-center' alt="" />

@@ -4,6 +4,7 @@ import Projects from './Projects'
 import Skills from './Skills'
 import { SiJavascript } from "react-icons/si";
 import { FaLongArrowAltRight, FaReact, FaCode } from "react-icons/fa";
+import Contact from './Contact';
 
 
 const Home = () => {
@@ -73,8 +74,8 @@ const Home = () => {
             <div className=' w-[95%] bg-slate-700 mx-auto h-[1px]' />
             <Projects />
 
-
-
+            <div className=' w-[95%] bg-slate-700 mx-auto h-[1px]' />
+            <Contact />
 
 
 
