@@ -149,7 +149,7 @@ const Contact = () => {
                                 type="email"
                                 id="email"
                                 className="shadow-sm bg-gray-50 border-[1px] border-slate-600  dark:border-none outline-none text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white  dark:shadow-sm-light"
-                                placeholder="name@flowbite.com"
+                                placeholder="name@mail.com"
                                 required
                             />
                         </div>
