@@ -8,10 +8,11 @@ import socialmediaaapp from './imgs/socialmedia.png'
 import ecommerce from './imgs/ecommerce.png'
 import weatherapp from './imgs/weatherapp.png'
 import ONFLEEK from './imgs/ONFLEEK.png'
+import MernSocial from './imgs/mernSocial.png'
 import Chat_app from './imgs/Chat_App.png'
 import { HiCode } from 'react-icons/hi'
 import { BsArrowRightShort } from 'react-icons/bs'
-import { SiJavascript, SiNodedotjs, SiMongodb, SiExpress, SiPassport, SiReact, SiRedux, SiTailwindcss, SiHtml5, SiCss3, SiFirebase, SiBootstrap} from 'react-icons/si'
+import { SiJavascript, SiNodedotjs, SiMongodb, SiExpress, SiReact, SiRedux, SiTailwindcss, SiHtml5, SiCss3, SiFirebase, SiBootstrap, SiJsonwebtokens } from 'react-icons/si'
 import { TbApi } from 'react-icons/tb'
 
 
@@ -25,6 +26,7 @@ const Projects = () => {
 
     const fbstack = [<SiReact size='20' className=' text-sky-600 ' />, <SiCss3 size='20' className=' text-sky-600 ' />, <SiTailwindcss size='20' className=' text-teal-500 ' />, <SiRedux size='20' className=' text-purple-600 ' />, <SiFirebase size='20' className=' text-yellow-500 ' />]
     const njsstack = [<SiHtml5 size='20' className=' text-orange-500 ' />, <SiCss3 size='20' className=' text-sky-600 ' />, <SiJavascript size='20' className=' text-yellow-400 rounded-sm ' />, <SiBootstrap size='20' className=' text-purple-500 ' />, <TbApi size='20' className=' dark:text-white ' />]
+    const mernstack = [<SiCss3 size='20' className=' text-sky-600 ' />, <SiJavascript size='20' className=' text-yellow-400 rounded-sm ' />, <SiTailwindcss size='20' className=' text-teal-500 ' />,<SiRedux size='20' className=' text-purple-600 ' />,<SiJsonwebtokens size='20' className='  h-[36px] rounded-md  mx-1' />, <SiNodedotjs size='20' className=' text-green-600 ' />, <SiExpress size='20' className=' dark:text-white ' />, <SiMongodb size='20' className=' text-green-600 ' />, <TbApi size='20' className=' dark:text-white ' />]
 
     const projects = [
         {
@@ -33,6 +35,13 @@ const Projects = () => {
             demoLink: 'https://on-fleek.netlify.app/',
             githubLink: false,
             usedTechnologies: fbstack
+        },
+        {
+            image: MernSocial,
+            describtion: 'Fullstack Social media web application made using React.js & node.js & express.js & mongoDb & mongoose & css & tailwindcss',
+            demoLink: 'https://smws.onrender.com/',
+            githubLink: 'https://github.com/ALi-ahmed-e/social-media-web-app-backend-',
+            usedTechnologies: mernstack
         },
         {
             image: Chat_app,
