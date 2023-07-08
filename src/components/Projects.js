@@ -10,6 +10,7 @@ import weatherapp from './imgs/weatherapp.png'
 import ONFLEEK from './imgs/ONFLEEK.png'
 import MernSocial from './imgs/mernSocial.png'
 import Chat_app from './imgs/Chat_App.png'
+import mernEcommerce from './imgs/mernEcommerce.png'
 import { HiCode } from 'react-icons/hi'
 import { BsArrowRightShort } from 'react-icons/bs'
 import { SiJavascript, SiNodedotjs, SiMongodb, SiExpress, SiReact, SiRedux, SiTailwindcss, SiHtml5, SiCss3, SiFirebase, SiBootstrap, SiJsonwebtokens } from 'react-icons/si'
@@ -29,6 +30,19 @@ const Projects = () => {
     const mernstack = [<SiCss3 size='20' className=' text-sky-600 ' />, <SiJavascript size='20' className=' text-yellow-400 rounded-sm ' />, <SiTailwindcss size='20' className=' text-teal-500 ' />,<SiRedux size='20' className=' text-purple-600 ' />,<SiJsonwebtokens size='20' className='  h-[36px] rounded-md  mx-1' />, <SiNodedotjs size='20' className=' text-green-600 ' />, <SiExpress size='20' className=' dark:text-white ' />, <SiMongodb size='20' className=' text-green-600 ' />, <TbApi size='20' className=' dark:text-white ' />]
 
     const projects = [
+        {
+            image: mernEcommerce,
+            describtion: 'Fullstack E-commerce web application made using React.js & node.js & express.js & mongoDb & mongoose & css & tailwindcss includes all necessary futures ',
+            demoLink: 'https://ecommerce-mern-app-9r3w.onrender.com/',
+            githubLink: 'https://github.com/ALi-ahmed-e/mern-stack-e-commerce',
+            usedTechnologies: mernstack
+        },{
+            image: ONFLEEK,
+            describtion: 'Fullstack E-commerce web application made using React.js & firebase & css & tailwindcss',
+            demoLink: 'https://on-fleek.netlify.app/',
+            githubLink: false,
+            usedTechnologies: fbstack
+        },
         {
             image: ONFLEEK,
             describtion: 'Fullstack E-commerce web application made using React.js & firebase & css & tailwindcss',
