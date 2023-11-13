@@ -36,12 +36,6 @@ const Projects = () => {
             demoLink: 'https://ecommerce-mern-app-9r3w.onrender.com/',
             githubLink: 'https://github.com/ALi-ahmed-e/mern-stack-e-commerce',
             usedTechnologies: mernstack
-        },{
-            image: ONFLEEK,
-            describtion: 'Fullstack E-commerce web application made using React.js & firebase & css & tailwindcss',
-            demoLink: 'https://on-fleek.netlify.app/',
-            githubLink: false,
-            usedTechnologies: fbstack
         },
         {
             image: ONFLEEK,
